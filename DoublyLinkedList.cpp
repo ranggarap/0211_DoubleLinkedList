@@ -204,5 +204,28 @@ void retraverse()
            
         } 
     }
-
+//prosedur untuk mencar data dan menampilkan  dan menampilkan data yg akan di cari
+void searchData()
+{
+    if (listempty()== true )
+    {
+        cout << "\nList is empty"  <<endl;
+    }
+Node *prev, *curr;
+prev = curr = NULL;
+cout << "\nEnter the roll nember of the student whose record yo want to search :";
+int num ;
+cin >> num ;
+if (search (num, & prev, & curr) ==false )
+    cout <<"\nRecord the not found " << endl;
+    else 
+    {
+        cout << "\nRecord found "<< endl;
+        cout << "\nRoll number :" << curr ->noMhs << endl;
+        cout <<"\nName:" << curr -> name << endl;
+    }
 }
+int main()
+{   
+
+  
