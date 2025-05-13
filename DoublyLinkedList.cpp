@@ -28,6 +28,15 @@ void addnote()
     //insert the new node in the list
     // kondisi jika star = null atau noMhs node baru <= noMhs start
     if (START == NULL || newNode -> noMhs <= START -> noMhs )
-    
+    {
+        //STEP 2 :insert the new node at the beggining 
+        // kondisi jika start tidak kosong dan noMhs node baru sama dengan noMhs
+        if (START !=NULL && newNode  -> noMhs==START -> noMhs)
+        {
+            cout << "\033 [31mDuplicate roll number not allowed \033[0m" <<endl;
+            return;
+        }
+        
+
 
 } 
