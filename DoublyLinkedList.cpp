@@ -48,6 +48,15 @@ void addnote()
         newNode -> prev = NULL ; //step 5 make the new node point to NUll
         START = newNode; // step 6 make the new node the frist node 
     }
-
-
+// kondisi jika semua kondisi if tidak terpenuhi 
+else
+{
+    // insert the new node in the middle or at the end 
+    // set nilai current = start dan nilai previous =null
+    Node *current = START; // step 1.a start from the first node
+    Node *previous = NULL; // step 1.b : previous node is null initialitty
+    
+    // lopping selama current != null dan noMhs dari current lebih kecil dari
+    while (current != NULL && current -> noMhs < newNode ->noMhs) 
+}
 } 
