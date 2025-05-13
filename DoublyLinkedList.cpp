@@ -58,5 +58,14 @@ else
     
     // lopping selama current != null dan noMhs dari current lebih kecil dari
     while (current != NULL && current -> noMhs < newNode ->noMhs) 
-}
+    {                               // step 1.c traverse the list to find the 
+        previous = current;         // step 1.d move the previous to the current
+        current = current ->next;   // step 1.e move the current to the next 
+
+        // set nilai next node baru = current dan prev node baru == previous 
+        newNode -> next = current  ; //step 4 : make the next field of the new code
+        newNode -> prev = previous ; //step 5 : make the previous field of the new nodes  
+
+
+
 } 
