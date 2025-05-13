@@ -66,6 +66,13 @@ else
         newNode -> next = current  ; //step 4 : make the next field of the new code
         newNode -> prev = previous ; //step 5 : make the previous field of the new nodes  
 
+        // kondisi jika current tidak sama dengan null
+        if (current != NULL)
+        {
+            current -> prev = newNode; // step 6: make the previous field of the 
+        }
+        
+        
 
 
 } 
