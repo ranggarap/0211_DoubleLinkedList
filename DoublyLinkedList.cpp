@@ -143,6 +143,12 @@ else
     if (current-> next != NULL)
     {// if there a successor ,update its prev pointer
             current -> next -> prev =previous ;
+        }
     }
+    //release the memory of the node marked as current 
+    delete current ;
+    cout <<"\x1b[32mRecord wiyh roll number" << rollNo << "delete\x1b[0m" << endl;
 }
+
+
 }
