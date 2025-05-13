@@ -138,6 +138,11 @@ if (current = START)
 }
 else 
 {
- 
+    // node to be delected is not the frist node 
+    previous ->next =current ->next;
+    if (current-> next != NULL)
+    {// if there a successor ,update its prev pointer
+            current -> next -> prev =previous ;
+    }
 }
 }
