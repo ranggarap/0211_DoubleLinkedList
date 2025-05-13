@@ -77,7 +77,13 @@ else
             previous -> next = newNode; //step 7 make the next field of the previous 
         }
         
-
+        // kondisi jika if previous sama dengan null 
+        else
+        {
+            // if previous is null , means newnode is now the frist node
+            START = newNode;
+        }
+    }
 }
         
 
