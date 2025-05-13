@@ -36,7 +36,15 @@ void addnote()
             cout << "\033 [31mDuplicate roll number not allowed \033[0m" <<endl;
             return;
         }
-        
+        // if the list is empty ,make the new node the start
+        newNode-> next = START; // step3 : make the new point to the first node
+        // kondisi jika start tidak memiliki nilai atau tidak kosong 
+        if (START != NULL)
+        {
+            START -> prev =newNode;// step 4 make the first node to the node
+        }
+
+    }
 
 
 } 
