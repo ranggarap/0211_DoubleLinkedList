@@ -71,7 +71,14 @@ else
         {
             current -> prev = newNode; // step 6: make the previous field of the 
         }
+        // kondisi jika previous tidak sama dengan null
+        if (previous != NULL)
+        {
+            previous -> next = newNode; //step 7 make the next field of the previous 
+        }
         
+
+}
         
 
 
