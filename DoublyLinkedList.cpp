@@ -43,7 +43,10 @@ void addnote()
         {
             START -> prev =newNode;// step 4 make the first node to the node
         }
-
+        // memberi nilai prev = null dan start = node baru
+        
+        newNode -> prev = NULL ; //step 5 make the new node point to NUll
+        START = newNode; // step 6 make the new node the frist node 
     }
 
 
