@@ -99,3 +99,21 @@ bool search (int rollNo, Node **previous ,Node ** current)
     return (*current !=NULL);
 
 } 
+// pembuatan prosedur delete untuk menghapus data
+void deleteNode()
+{
+    Node *previous , *current;
+    int rollNo;
+
+    cout << "\nEnter the roll number of the student whose record is to be delete: ";
+    cin >> rollNo; // step 3: get roll number number to be delete
+
+    if (START == NULL)
+    {
+        cout << "list is empty" << endl;
+        return ;
+    }
+
+    current = START; // step 1 : start from the frist node
+    previous = NULL;
+}
