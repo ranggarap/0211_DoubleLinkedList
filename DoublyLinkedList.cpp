@@ -155,3 +155,54 @@ bool listempty()
 {
     return (START == NULL );
 }
+
+void traverse()
+{
+    
+        if(listempty())
+        {
+            cout << "\nlist kosong\n";
+        }
+        else
+        {
+            cout << "\nData di dalam list adalah;\n";
+            Node *currentNode =START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                Node*currentNode =START;
+                while (currentNode !=NULL)
+                {
+                    cout << currentNode->noMhs << endl;
+                    currentNode = currentNode->next;
+                }
+                
+            }
+            cout <<endl;
+        }
+}
+
+//prosedur traverse retraverse 
+void retraverse()
+    {
+        if(listempty())
+        {
+            cout << "\nlist empty\n";
+        }
+        else
+        {
+            cout << "\nRecord in descending order of roll number are:" <<endl;
+            Node *currentNode =START;
+            while (currentNode != NULL)
+            currentNode = currentNode->next;
+             while (currentNode !=NULL)
+            {
+                cout << currentNode ->noMhs << " " << currentNode-> name << endl;
+                currentNode = currentNode->prev;
+                
+            }
+           
+        } 
+    }
+
+}
