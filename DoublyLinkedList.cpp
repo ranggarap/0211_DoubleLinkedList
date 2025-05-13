@@ -150,5 +150,8 @@ else
     cout <<"\x1b[32mRecord wiyh roll number" << rollNo << "delete\x1b[0m" << endl;
 }
 
-
+// method untuk mengecek apakah list kosong
+bool listempty()
+{
+    return (START == NULL );
 }
